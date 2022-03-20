@@ -130,9 +130,9 @@ local function MEVIQ_fake_script() -- TextButton.scripts
 
 	script.Parent.MouseButton1Click:Connect(function()
 		local player = game.Players.LocalPlayer
-		player.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1,264,25)
-		wait(10)
 		player.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(0,264,60)
+		wait(10)
+		player.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1,264,25)
 	end)
 	
 end
